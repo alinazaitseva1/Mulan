@@ -54,6 +54,9 @@
                         <barButtonItem key="rightBarButtonItem" title="Show" id="ot9-0K-Ihg"/>
                     </navigationItem>
                     <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" translucent="NO" prompted="NO"/>
+                    <connections>
+                        <outlet property="tableStat" destination="4a6-TB-fGg" id="0JQ-QD-iWG"/>
+                    </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="KrU-nu-bYa" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

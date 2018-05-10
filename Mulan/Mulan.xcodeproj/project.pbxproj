@@ -12,14 +12,11 @@
 		CED201C120A447660075CA5B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CED201C020A447660075CA5B /* Assets.xcassets */; };
 		CED201C420A447660075CA5B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CED201C220A447660075CA5B /* LaunchScreen.storyboard */; };
 		CED201CD20A449CC0075CA5B /* MainTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CED201CC20A449CC0075CA5B /* MainTableViewController.swift */; };
-		CED201D220A44BB30075CA5B /* DetailTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CED201D120A44BB30075CA5B /* DetailTableViewController.swift */; };
-		CED201D420A44BD70075CA5B /* DataSourceModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CED201D320A44BD70075CA5B /* DataSourceModel.swift */; };
-		CED201D620A44BF40075CA5B /* DataSourceProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = CED201D520A44BF40075CA5B /* DataSourceProtocol.swift */; };
 		CED201DB20A451CE0075CA5B /* DataCellEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = CED201DA20A451CE0075CA5B /* DataCellEntity.swift */; };
 		CED201DD20A463FB0075CA5B /* EnumSortType.swift in Sources */ = {isa = PBXBuildFile; fileRef = CED201DC20A463FB0075CA5B /* EnumSortType.swift */; };
 		CED201DF20A464220075CA5B /* example.swift in Sources */ = {isa = PBXBuildFile; fileRef = CED201DE20A464220075CA5B /* example.swift */; };
-		CED201E420A474580075CA5B /* FactoryManagerSort.swift in Sources */ = {isa = PBXBuildFile; fileRef = CED201E320A474580075CA5B /* FactoryManagerSort.swift */; };
 		CED201F020A482930075CA5B /* ArrayForSort.swift in Sources */ = {isa = PBXBuildFile; fileRef = CED201EF20A482930075CA5B /* ArrayForSort.swift */; };
+		CED717D520A4EC2200D7396D /* DataTimeStatistic.swift in Sources */ = {isa = PBXBuildFile; fileRef = CED717D420A4EC2200D7396D /* DataTimeStatistic.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,14 +27,11 @@
 		CED201C320A447660075CA5B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		CED201C520A447660075CA5B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CED201CC20A449CC0075CA5B /* MainTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTableViewController.swift; sourceTree = "<group>"; };
-		CED201D120A44BB30075CA5B /* DetailTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailTableViewController.swift; sourceTree = "<group>"; };
-		CED201D320A44BD70075CA5B /* DataSourceModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataSourceModel.swift; sourceTree = "<group>"; };
-		CED201D520A44BF40075CA5B /* DataSourceProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataSourceProtocol.swift; sourceTree = "<group>"; };
 		CED201DA20A451CE0075CA5B /* DataCellEntity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataCellEntity.swift; sourceTree = "<group>"; };
 		CED201DC20A463FB0075CA5B /* EnumSortType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EnumSortType.swift; sourceTree = "<group>"; };
 		CED201DE20A464220075CA5B /* example.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = example.swift; sourceTree = "<group>"; };
-		CED201E320A474580075CA5B /* FactoryManagerSort.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FactoryManagerSort.swift; sourceTree = "<group>"; };
 		CED201EF20A482930075CA5B /* ArrayForSort.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArrayForSort.swift; sourceTree = "<group>"; };
+		CED717D420A4EC2200D7396D /* DataTimeStatistic.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataTimeStatistic.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -71,15 +65,12 @@
 		CED201B820A447600075CA5B /* Mulan */ = {
 			isa = PBXGroup;
 			children = (
-				CED201E220A474280075CA5B /* Factory */,
+				CED717D620A4F4F300D7396D /* Enum */,
 				CED201D720A44C090075CA5B /* Cells */,
-				CED201D020A449F90075CA5B /* Protocols */,
 				CED201CF20A449DC0075CA5B /* Controllers */,
 				CED201CE20A449D30075CA5B /* Models */,
 				CED201BD20A447600075CA5B /* Main.storyboard */,
 				CED201C520A447660075CA5B /* Info.plist */,
-				CED201DC20A463FB0075CA5B /* EnumSortType.swift */,
-				CED201EF20A482930075CA5B /* ArrayForSort.swift */,
 				CED201DE20A464220075CA5B /* example.swift */,
 			);
 			path = Mulan;
@@ -98,7 +89,8 @@
 		CED201CE20A449D30075CA5B /* Models */ = {
 			isa = PBXGroup;
 			children = (
-				CED201D320A44BD70075CA5B /* DataSourceModel.swift */,
+				CED717D420A4EC2200D7396D /* DataTimeStatistic.swift */,
+				CED201EF20A482930075CA5B /* ArrayForSort.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -107,17 +99,8 @@
 			isa = PBXGroup;
 			children = (
 				CED201CC20A449CC0075CA5B /* MainTableViewController.swift */,
-				CED201D120A44BB30075CA5B /* DetailTableViewController.swift */,
 			);
 			path = Controllers;
-			sourceTree = "<group>";
-		};
-		CED201D020A449F90075CA5B /* Protocols */ = {
-			isa = PBXGroup;
-			children = (
-				CED201D520A44BF40075CA5B /* DataSourceProtocol.swift */,
-			);
-			path = Protocols;
 			sourceTree = "<group>";
 		};
 		CED201D720A44C090075CA5B /* Cells */ = {
@@ -128,12 +111,12 @@
 			path = Cells;
 			sourceTree = "<group>";
 		};
-		CED201E220A474280075CA5B /* Factory */ = {
+		CED717D620A4F4F300D7396D /* Enum */ = {
 			isa = PBXGroup;
 			children = (
-				CED201E320A474580075CA5B /* FactoryManagerSort.swift */,
+				CED201DC20A463FB0075CA5B /* EnumSortType.swift */,
 			);
-			path = Factory;
+			path = Enum;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -208,13 +191,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				CED201DB20A451CE0075CA5B /* DataCellEntity.swift in Sources */,
-				CED201D420A44BD70075CA5B /* DataSourceModel.swift in Sources */,
 				CED201DD20A463FB0075CA5B /* EnumSortType.swift in Sources */,
+				CED717D520A4EC2200D7396D /* DataTimeStatistic.swift in Sources */,
 				CED201F020A482930075CA5B /* ArrayForSort.swift in Sources */,
-				CED201D220A44BB30075CA5B /* DetailTableViewController.swift in Sources */,
 				CED201DF20A464220075CA5B /* example.swift in Sources */,
-				CED201D620A44BF40075CA5B /* DataSourceProtocol.swift in Sources */,
-				CED201E420A474580075CA5B /* FactoryManagerSort.swift in Sources */,
 				CED201CD20A449CC0075CA5B /* MainTableViewController.swift in Sources */,
 				CED201BA20A447600075CA5B /* AppDelegate.swift in Sources */,
 			);

@@ -8,10 +8,15 @@
 
 import Foundation
 
-enum EnumSortType {
-    case Insert
-    case Selection
-    case Merge
-    case Bubble
-    case Quick
+enum EnumSortType: String  {
+    case Insertion,
+    Selection,
+    Merge,
+    Bubble,
+    Quick
+    
+    var countEnum: Int {
+        return 5
+    }
+
 }

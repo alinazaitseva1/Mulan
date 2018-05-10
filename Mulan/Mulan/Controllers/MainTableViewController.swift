@@ -10,6 +10,11 @@ import UIKit
 
 class MainTableViewController: UITableViewController {
 
+    var randomArray = (1...100).map{_ in Int(arc4random())}
+    var resultArray: Array<Array<String>>!
+    
+    @IBOutlet weak var tableStat: UITableView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
     }
