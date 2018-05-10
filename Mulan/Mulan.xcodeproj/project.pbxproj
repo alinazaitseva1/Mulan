@@ -8,20 +8,20 @@
 
 /* Begin PBXBuildFile section */
 		CED201BA20A447600075CA5B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CED201B920A447600075CA5B /* AppDelegate.swift */; };
-		CED201BC20A447600075CA5B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CED201BB20A447600075CA5B /* ViewController.swift */; };
 		CED201BF20A447600075CA5B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CED201BD20A447600075CA5B /* Main.storyboard */; };
 		CED201C120A447660075CA5B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CED201C020A447660075CA5B /* Assets.xcassets */; };
 		CED201C420A447660075CA5B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CED201C220A447660075CA5B /* LaunchScreen.storyboard */; };
+		CED201CD20A449CC0075CA5B /* MainTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CED201CC20A449CC0075CA5B /* MainTableViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		CED201B620A447600075CA5B /* Mulan.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Mulan.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CED201B920A447600075CA5B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		CED201BB20A447600075CA5B /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		CED201BE20A447600075CA5B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		CED201C020A447660075CA5B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CED201C320A447660075CA5B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		CED201C520A447660075CA5B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CED201CC20A449CC0075CA5B /* MainTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTableViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -39,6 +39,7 @@
 			isa = PBXGroup;
 			children = (
 				CED201B820A447600075CA5B /* Mulan */,
+				CED201CB20A4496E0075CA5B /* Supporting files */,
 				CED201B720A447600075CA5B /* Products */,
 			);
 			sourceTree = "<group>";
@@ -54,14 +55,45 @@
 		CED201B820A447600075CA5B /* Mulan */ = {
 			isa = PBXGroup;
 			children = (
-				CED201B920A447600075CA5B /* AppDelegate.swift */,
-				CED201BB20A447600075CA5B /* ViewController.swift */,
+				CED201D020A449F90075CA5B /* Protocols */,
+				CED201CF20A449DC0075CA5B /* Controllers */,
+				CED201CE20A449D30075CA5B /* Models */,
+				CED201CC20A449CC0075CA5B /* MainTableViewController.swift */,
 				CED201BD20A447600075CA5B /* Main.storyboard */,
-				CED201C020A447660075CA5B /* Assets.xcassets */,
-				CED201C220A447660075CA5B /* LaunchScreen.storyboard */,
 				CED201C520A447660075CA5B /* Info.plist */,
 			);
 			path = Mulan;
+			sourceTree = "<group>";
+		};
+		CED201CB20A4496E0075CA5B /* Supporting files */ = {
+			isa = PBXGroup;
+			children = (
+				CED201B920A447600075CA5B /* AppDelegate.swift */,
+				CED201C020A447660075CA5B /* Assets.xcassets */,
+				CED201C220A447660075CA5B /* LaunchScreen.storyboard */,
+			);
+			path = "Supporting files";
+			sourceTree = "<group>";
+		};
+		CED201CE20A449D30075CA5B /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		CED201CF20A449DC0075CA5B /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		CED201D020A449F90075CA5B /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Protocols;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -135,7 +167,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CED201BC20A447600075CA5B /* ViewController.swift in Sources */,
+				CED201CD20A449CC0075CA5B /* MainTableViewController.swift in Sources */,
 				CED201BA20A447600075CA5B /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
