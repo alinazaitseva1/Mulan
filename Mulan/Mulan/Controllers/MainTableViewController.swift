@@ -12,6 +12,7 @@ class MainTableViewController: UITableViewController {
 
     var randomArray = (1...100).map{_ in Int(arc4random())}
     var resultArray: Array<Array<String>>!
+ 
     
     @IBOutlet weak var tableStat: UITableView!
     
@@ -20,8 +21,9 @@ class MainTableViewController: UITableViewController {
     }
 
     override func numberOfSections(in tableView: UITableView) -> Int {
-        // #warning Incomplete implementation, return the number of sections
+//        return EnumSortType.countEnum
         return 0
+        
     }
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
@@ -31,8 +33,8 @@ class MainTableViewController: UITableViewController {
 
   
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "reuseIdentifier", for: indexPath)
-        // Configure the cell...
+        guard let cell = tableView.dequeueReusableCell(withIdentifier: "DataCellEntity", for: indexPath) as? DataCellEntity
+            else { return UITableViewCell() }
 
         return cell
     }
@@ -84,3 +86,14 @@ class MainTableViewController: UITableViewController {
     */
 
 }
+var randomArray = (1...100).map{_ in Int(arc4random())}
+
+extension Array {
+        func makeArray(count:Int, range: Int ) -> [Int] {
+                var result: [Int] = []
+                for _ in 0..<count {
+                        result.append(Int(arc4random_uniform(UInt32(range)) + 1))
+                   }
+                return result
+            }
+    }

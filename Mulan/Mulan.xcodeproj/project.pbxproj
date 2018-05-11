@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		CE0FA40620A57E0A00DF565B /* ExtensionArray.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE0FA40520A57E0A00DF565B /* ExtensionArray.swift */; };
 		CED201BA20A447600075CA5B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CED201B920A447600075CA5B /* AppDelegate.swift */; };
 		CED201BF20A447600075CA5B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CED201BD20A447600075CA5B /* Main.storyboard */; };
 		CED201C120A447660075CA5B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CED201C020A447660075CA5B /* Assets.xcassets */; };
@@ -20,6 +21,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		CE0FA40520A57E0A00DF565B /* ExtensionArray.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionArray.swift; sourceTree = "<group>"; };
 		CED201B620A447600075CA5B /* Mulan.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Mulan.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CED201B920A447600075CA5B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CED201BE20A447600075CA5B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -91,6 +93,7 @@
 			children = (
 				CED717D420A4EC2200D7396D /* DataTimeStatistic.swift */,
 				CED201EF20A482930075CA5B /* ArrayForSort.swift */,
+				CE0FA40520A57E0A00DF565B /* ExtensionArray.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -193,6 +196,7 @@
 				CED201DB20A451CE0075CA5B /* DataCellEntity.swift in Sources */,
 				CED201DD20A463FB0075CA5B /* EnumSortType.swift in Sources */,
 				CED717D520A4EC2200D7396D /* DataTimeStatistic.swift in Sources */,
+				CE0FA40620A57E0A00DF565B /* ExtensionArray.swift in Sources */,
 				CED201F020A482930075CA5B /* ArrayForSort.swift in Sources */,
 				CED201DF20A464220075CA5B /* example.swift in Sources */,
 				CED201CD20A449CC0075CA5B /* MainTableViewController.swift in Sources */,
