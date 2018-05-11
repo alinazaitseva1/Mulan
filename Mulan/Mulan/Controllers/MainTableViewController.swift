@@ -11,31 +11,32 @@ import UIKit
 class MainTableViewController: UITableViewController {
 
     var randomArray = (1...100).map{_ in Int(arc4random())}
-    var resultArray: Array<Array<String>>!
+    var resultArray: [[String]]!
+    var enumSort = EnumSortType(rawValue: 5)
  
-    
     @IBOutlet weak var tableStat: UITableView!
-    
+
     override func viewDidLoad() {
         super.viewDidLoad()
+        resultArray = Array(repeating: Array(repeating: "", count: randomArray.count), count: enumSort.count)
     }
 
     override func numberOfSections(in tableView: UITableView) -> Int {
-//        return EnumSortType.countEnum
-        return 0
-        
+        return enumSort.count
     }
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        // #warning Incomplete implementation, return the number of rows
-        return 0
+        return 1
     }
 
-  
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         guard let cell = tableView.dequeueReusableCell(withIdentifier: "DataCellEntity", for: indexPath) as? DataCellEntity
             else { return UITableViewCell() }
-
+        if resultArray.indices.contains(indexPath.section) {
+            if resultArray[indexPath.section].indices.contains(indexPath.row) {
+                cell.labelData?.text = resultArray[indexPath.section][indexPath.row]
+            }
+        }
         return cell
     }
   
@@ -86,14 +87,4 @@ class MainTableViewController: UITableViewController {
     */
 
 }
-var randomArray = (1...100).map{_ in Int(arc4random())}
 
-extension Array {
-        func makeArray(count:Int, range: Int ) -> [Int] {
-                var result: [Int] = []
-                for _ in 0..<count {
-                        result.append(Int(arc4random_uniform(UInt32(range)) + 1))
-                   }
-                return result
-            }
-    }
