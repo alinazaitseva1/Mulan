@@ -36,7 +36,7 @@ class MainViewController: UIViewController, UITableViewDelegate, UITableViewData
     }
     override func viewDidLoad() {
         super.viewDidLoad()
-        serArray()
+        setArray()
         performSorting()
         
     }
@@ -84,11 +84,7 @@ class MainViewController: UIViewController, UITableViewDelegate, UITableViewData
         }
     }
     
-    func prepareForPerform(sort: SortType, _ numbers: (([Int])-> ()) ) {
-        
-    }
-    
-    func serArray() {
+    func setArray() {
         for i in 0..<sortType.count {
             resultArray.append([])
             for _ in 0..<arraySizes.count{
