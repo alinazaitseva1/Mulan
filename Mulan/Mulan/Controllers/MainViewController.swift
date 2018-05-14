@@ -21,7 +21,7 @@ class MainViewController: UIViewController, UITableViewDelegate, UITableViewData
     let operationQuene = OperationQueue()
     
     let sortType: [SortType] = [.Insertion, .Selection, .Merge, .Bubble, .Quick]
-    let arraySizes = [1000, 8000]
+    let arraySizes = [1000]
     let sorting = SortAlgorithm()
     var progress = 0.0
     var timeForSort = TimeSorting()
@@ -51,14 +51,15 @@ class MainViewController: UIViewController, UITableViewDelegate, UITableViewData
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         guard let cell = tableView.dequeueReusableCell(withIdentifier: "CellTableView", for: indexPath) as? CellTableView else { return UITableViewCell() }
-        cell.labelSort.text = resultArray[indexPath.section][indexPath.row]
+        let time = resultArray[indexPath.section][indexPath.row]
+        cell.labelSort.text = "Time of sorting: \(time)"
         return cell
     }
     
     func tableView(_ tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
         let view = UIView(frame: CGRect(x: 0, y: 0, width: tableViewSort.bounds.width, height: 40))
         let label = UILabel(frame: CGRect(x: 20, y: 0, width: tableViewSort.bounds.width - 40, height: 30))
-        view.backgroundColor = UIColor.yellow
+        view.backgroundColor = UIColor.purple
         label.font = UIFont(name: "Aril", size: 25)
         label.textColor = UIColor.black
         label.text = sortType[section].rawValue
@@ -68,19 +69,23 @@ class MainViewController: UIViewController, UITableViewDelegate, UITableViewData
     
     func performSorting() {
         operationQuene.addOperation {
-            self.timeForSort.timeSorting(typeSort: .Quick, array: self.randomArray)
+            self.resultArray[self.sortType.index(of: SortType.Quick)!][0] = String(self.timeForSort.timeSorting(typeSort: .Quick, array: self.randomArray))
         }
         operationQuene.addOperation {
-            self.timeForSort.timeSorting(typeSort: .Merge, array: self.randomArray)
+            
+            self.resultArray[self.sortType.index(of: SortType.Merge)!][0] = String(self.timeForSort.timeSorting(typeSort: .Merge, array: self.randomArray))
         }
         dispatchQuene.async {
-            self.timeForSort.timeSorting(typeSort: .Insertion, array: self.randomArray)
+            self.resultArray[self.sortType.index(of: SortType.Insertion)!][0] =
+            String(self.timeForSort.timeSorting(typeSort: .Insertion, array: self.randomArray))
         }
         dispatchQuene.async {
-            self.timeForSort.timeSorting(typeSort: .Selection, array: self.randomArray)
+            self.resultArray[self.sortType.index(of: SortType.Selection)!][0] = String(
+            self.timeForSort.timeSorting(typeSort: .Selection, array: self.randomArray))
         }
         dispatchQuene.async {
-            self.timeForSort.timeSorting(typeSort: .Bubble, array: self.randomArray)
+            self.resultArray[self.sortType.index(of: SortType.Bubble)!][0] = String(
+            self.timeForSort.timeSorting(typeSort: .Bubble, array: self.randomArray))
         }
     }
     

@@ -36,6 +36,6 @@ class TimeSorting {
             _ = sorting.quickSort(array: array)
             result = -now.timeIntervalSinceNow
         }
-        return Double(round(1000*result)/1000)
+        return result
     }
 }
