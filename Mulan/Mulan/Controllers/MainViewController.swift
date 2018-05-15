@@ -11,7 +11,7 @@ import UIKit
 
 class MainViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
     
-    var randomArray = (1...100).map{_ in Int(arc4random())}
+    var randomArray = (1...1000).map{_ in Int(arc4random())}
     
     @IBOutlet var tableViewSort: UITableView!
     @IBOutlet weak var progresssView: UIProgressView!
@@ -38,9 +38,8 @@ class MainViewController: UIViewController, UITableViewDelegate, UITableViewData
         super.viewDidLoad()
         setArray()
         performSorting()
-        
     }
-    
+
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return arraySizes.count
     }
