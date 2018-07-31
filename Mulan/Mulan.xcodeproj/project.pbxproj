@@ -7,21 +7,29 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		CE73CCE820A8F0D50079B6B8 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE73CCE720A8F0D50079B6B8 /* MainViewController.swift */; };
+		CE73CCEA20A8F1DE0079B6B8 /* SortAlgorithm.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE73CCE920A8F1DE0079B6B8 /* SortAlgorithm.swift */; };
 		CED201BA20A447600075CA5B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CED201B920A447600075CA5B /* AppDelegate.swift */; };
-		CED201BC20A447600075CA5B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CED201BB20A447600075CA5B /* ViewController.swift */; };
 		CED201BF20A447600075CA5B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CED201BD20A447600075CA5B /* Main.storyboard */; };
 		CED201C120A447660075CA5B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CED201C020A447660075CA5B /* Assets.xcassets */; };
 		CED201C420A447660075CA5B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CED201C220A447660075CA5B /* LaunchScreen.storyboard */; };
+		CED201DB20A451CE0075CA5B /* CellTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CED201DA20A451CE0075CA5B /* CellTableView.swift */; };
+		CED201DD20A463FB0075CA5B /* SortType.swift in Sources */ = {isa = PBXBuildFile; fileRef = CED201DC20A463FB0075CA5B /* SortType.swift */; };
+		CED717D520A4EC2200D7396D /* TimeSorting.swift in Sources */ = {isa = PBXBuildFile; fileRef = CED717D420A4EC2200D7396D /* TimeSorting.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		CE73CCE720A8F0D50079B6B8 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
+		CE73CCE920A8F1DE0079B6B8 /* SortAlgorithm.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SortAlgorithm.swift; sourceTree = "<group>"; };
 		CED201B620A447600075CA5B /* Mulan.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Mulan.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CED201B920A447600075CA5B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		CED201BB20A447600075CA5B /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		CED201BE20A447600075CA5B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		CED201C020A447660075CA5B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CED201C320A447660075CA5B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		CED201C520A447660075CA5B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CED201DA20A451CE0075CA5B /* CellTableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CellTableView.swift; sourceTree = "<group>"; };
+		CED201DC20A463FB0075CA5B /* SortType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SortType.swift; sourceTree = "<group>"; };
+		CED717D420A4EC2200D7396D /* TimeSorting.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeSorting.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -39,6 +47,7 @@
 			isa = PBXGroup;
 			children = (
 				CED201B820A447600075CA5B /* Mulan */,
+				CED201CB20A4496E0075CA5B /* Supporting files */,
 				CED201B720A447600075CA5B /* Products */,
 			);
 			sourceTree = "<group>";
@@ -54,14 +63,57 @@
 		CED201B820A447600075CA5B /* Mulan */ = {
 			isa = PBXGroup;
 			children = (
-				CED201B920A447600075CA5B /* AppDelegate.swift */,
-				CED201BB20A447600075CA5B /* ViewController.swift */,
+				CED717D620A4F4F300D7396D /* Enum */,
+				CED201D720A44C090075CA5B /* Cells */,
+				CED201CF20A449DC0075CA5B /* Controllers */,
+				CED201CE20A449D30075CA5B /* Models */,
 				CED201BD20A447600075CA5B /* Main.storyboard */,
-				CED201C020A447660075CA5B /* Assets.xcassets */,
-				CED201C220A447660075CA5B /* LaunchScreen.storyboard */,
 				CED201C520A447660075CA5B /* Info.plist */,
 			);
 			path = Mulan;
+			sourceTree = "<group>";
+		};
+		CED201CB20A4496E0075CA5B /* Supporting files */ = {
+			isa = PBXGroup;
+			children = (
+				CED201B920A447600075CA5B /* AppDelegate.swift */,
+				CED201C020A447660075CA5B /* Assets.xcassets */,
+				CED201C220A447660075CA5B /* LaunchScreen.storyboard */,
+			);
+			path = "Supporting files";
+			sourceTree = "<group>";
+		};
+		CED201CE20A449D30075CA5B /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				CED717D420A4EC2200D7396D /* TimeSorting.swift */,
+				CE73CCE920A8F1DE0079B6B8 /* SortAlgorithm.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		CED201CF20A449DC0075CA5B /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				CE73CCE720A8F0D50079B6B8 /* MainViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		CED201D720A44C090075CA5B /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				CED201DA20A451CE0075CA5B /* CellTableView.swift */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
+		CED717D620A4F4F300D7396D /* Enum */ = {
+			isa = PBXGroup;
+			children = (
+				CED201DC20A463FB0075CA5B /* SortType.swift */,
+			);
+			path = Enum;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -135,8 +187,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CED201BC20A447600075CA5B /* ViewController.swift in Sources */,
+				CED201DB20A451CE0075CA5B /* CellTableView.swift in Sources */,
+				CED201DD20A463FB0075CA5B /* SortType.swift in Sources */,
+				CED717D520A4EC2200D7396D /* TimeSorting.swift in Sources */,
+				CE73CCE820A8F0D50079B6B8 /* MainViewController.swift in Sources */,
 				CED201BA20A447600075CA5B /* AppDelegate.swift in Sources */,
+				CE73CCEA20A8F1DE0079B6B8 /* SortAlgorithm.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
